@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Loop Nerd" content="Create one that collects user data and sends it to another page." />
+    <meta name="description" content="This tutorial shows you how to create a simple HTML form using CSS3. The form will collect information from users and send them to a new web page."/>
+    <meta name="keywords" content="Html, Css, Jquery, Wordpress, Free Sites, Wordpress Theme, Responsive Site"/>
+    <meta name="author" content="Loop Nerd" />
+    <meta name="URL" content="https://www.loopnerd.com.br/artigos/css3/formulario-de-cadastro-html-css-pronto"/>
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="robots" content="index, follow"/>
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->       
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="form1.css">
+    <link rel="stylesheet" type="text/css" href="fonts-icones.css">
+    <link rel="shortcut icon" href="https://www.loopnerd.com.br/wp-content/themes/loopnerd/img/favicon.png"/>
+
+	<title>Formulário</title>
+ 
+ </head>
+
+<body>
+    
+<header class="main_header container">        
+    <div class="content">
+    
+        <div class="main_header_logo">
+            <img src="img/logo.png" alt="logo.png" title="Loop Nerd"/>
+        </div>
+    
+    </div>
+</header>
+
+<main class="main_content container">
+
+        
+    <section class="section-seu-codigo container">
+        
+        <div class="content">
+                        
+            <div class="box-artigo">
+                
+               
+                <!--Inícia Formulário-->
+
+                    <div class="container_form">
+            
+                            <h1>Formulário de Serviços</h1>
+
+                            <form class="form" action="#" method="post">
+                                
+                                <div class="form_grupo">
+                                    <label for="nome" class="form_label">Nome</label>
+                                    <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+                                </div>
+                                
+                                <div class="form_grupo">
+                                    <label for="e-mail" class="form_label">Email</label>
+                                    <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+                                </div>
+                                
+                                <div class="form_grupo">
+                                    <label for="endereco" class="form_label">Endereço</label>
+                                    <input type="endereco" name="endereco" class="form_input" id="endereco" placeholder="endereco" required>
+                                </div>
+
+                                <div class="form_grupo">
+                                    
+                                    <div class="form_servicos">
+                                    
+                                        <label for="servicos" class="text">Serviços</label>
+                                        <select name="servicos" class="dropdown" required>
+                                            
+                                            <option selected disabled class="form_select_option" value="">Selecione</option>
+                                            <option value="cabeleleira" class="form_select_option">Cabeleleiro(a)</option>
+                                            <option value="designer-de-sombracelha" class="form_select_option">Designer de sombrancelha </option>
+                                            <option value="depiladora" class="form_select_option">Depilador(a)</option>                    
+                                            <option value="esteticista" class="form_select_option">Esteticista</option> 
+                                            <option value="massagista" class="form_select_option">Massagista</option>                  
+                                       
+                                    </select>
+
+                                </div>
+
+
+                                    <div class="form_tempo">
+                                    
+                                        <label for="tempo" class="text">Quando pretende realizar o serviço?</label>
+                                        <select name="tempo" class="dropdown" required>
+                                            
+                                            <option selected disabled class="form_select_option" value="">Selecione</option>
+                                            <option value="animador-de-festas" class="form_select_option">Urgente (o mais rapido que puder)</option>
+                                            <option value="barman" class="form_select_option">Nos proximos 7 dias (1 semana)</option>
+                                            <option value="cantor" class="form_select_option">Nos proximos 15 dias (2 semanas)</option>                    
+                                            <option value="cozinheiro" class="form_select_option">Nos proximos 30 dias (1 mês)</option> 
+                                            <option value="churrasqueiro" class="form_select_option">Nos proximos 60 dias(2 meses)</option> 
+                                            <option value="fotografo" class="form_select_option">Nos proximos 90 dias(3 meses)</option> 
+                                            <option value="garcom" class="form_select_option">Sem data definida</option>            
+
+
+                                </div>
+                            </select>
+                              
+                                    <div class="form_message">
+                                        
+                                        <label for="message" class="form_message_label"> Especifique mais seu pedido:</label>
+                                        <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+
+                                    </div>
+
+                                    <div class="submit">
+
+                                      <input type="hidden" name="acao" value="enviar">
+                                      <button type="submit" name="Submit" class="submit_btn" >Concluir</button>
+                                    
+                                    </div>
+                            </form>
+
+                    </div><!--container_form-->
+
+                <!--Finaliza Formulário-->
+
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--FECHA BOX HTML-->
+
+
+</main>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+                    
+</body>
+</html>
